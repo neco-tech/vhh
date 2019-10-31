@@ -60,7 +60,9 @@ case "POST":
 
     unlink($symlink);
     unlink(ROOT . "/.db/{$port}");
-    force_delete($site);
+    if(preg_match("@".ROOT."/sites/[^\\/]+@", $site)){
+      force_delete($site);
+    }
 
     break;
   }
