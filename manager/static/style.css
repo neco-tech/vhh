@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+.hide {
+  display: none;
+}
+
 body {
   color: #555555;
   background-color: #FAFAFA;
@@ -18,6 +22,14 @@ body {
   margin: 0 auto;
   padding: 40px;
   overflow: hidden;
+}
+
+.wrap-large {
+  position: relative;
+  width: calc(100% - 40px);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
 }
 
 h1 {
@@ -127,6 +139,16 @@ h1 {
   font-size: 14px;
 }
 
+.sites tr td:nth-child(2) span .view-log {
+  display: inline-block;
+  padding: 2px 5px 1px;
+  border: 1px solid #008E17;
+  color: #008E17;
+  font-size: 12px;
+  line-height: 1;
+  background-color: #FFFFFF;
+}
+
 .sites tr td:nth-child(2) p {
   margin-top: 8px;
   font-size: 12px;
@@ -153,4 +175,49 @@ h1 {
   color: #EE3333;
   cursor: pointer;
   background: none;
+}
+
+.log-dialog {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.log-dialog .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 40px);
+  max-width: 1000px;
+  max-height: calc(100vh - 80px);
+  overflow-y: scroll;
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+}
+
+.log + .log {
+  margin: 40px 0 0;
+}
+
+.log h2 {
+  padding: 5px 10px;
+  border: 1px solid #999999;
+  border-bottom: none;
+  font-size: 16px;
+  font-weight: normal;
+  background-color: #EEEEEE;
+}
+
+.log div {
+  min-height: 200px;
+  max-height: 400px;
+  padding: 10px;
+  border: 1px solid #999999;
+  overflow: scroll;
+  line-height: 1.4;
+  background-color: #FFFFFF;
 }

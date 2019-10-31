@@ -54,6 +54,7 @@
         <td>
           <a href="http://<?php echo str_replace('60000', $site['port'], $_SERVER["HTTP_HOST"]); ?>" target="_blank"><?php echo $site['name']; ?></a>
           <span>(<?php echo $site['slug']; ?>)</span>
+          <span><a href="log.php?p=<?php echo $site['port']; ?>" class="view-log">ログ</a></span>
           <?php if($site['description']): ?>
           <p><?php echo nl2br(htmlspecialchars($site['description'])); ?></p>
           <?php endif; ?>
@@ -73,6 +74,12 @@
     </tbody>
   </table>
 </div>
+
+<div class="log-dialog">
+  <div class="inner">
+  </div>
+</div>
+
 <script src="static/jquery-3.4.1.min.js"></script>
 <script src="static/script.js"></script>
 </body>
