@@ -1,0 +1,5 @@
+.db/*
+.port-map/*
+sites/*
+logs/*
+!logs/.gitkeep

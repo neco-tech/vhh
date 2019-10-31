@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #555555;
+  background-color: #FAFAFA;
+}
+
+.wrap {
+  position: relative;
+  width: 700px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 40px;
+  overflow: hidden;
+}
+
+h1 {
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.add-form {
+  padding: 30px 0 0;
+}
+
+.add-form table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.add-form table th,
+.add-form table td {
+  padding: 0 0 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: normal;
+}
+
+.add-form table th {
+  width: 170px;
+  vertical-align: top;
+  line-height: 30px;
+}
+.add-form table .required th::after {
+  content: "※";
+  color: #EE3333;
+}
+
+.add-form table td {
+}
+
+.add-form table td input {
+  width: 100%;
+  height: 30px;
+  padding: 0 6px;
+  border: 1px solid #CCCCCC;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.add-form table td textarea {
+  width: 100%;
+  height: 80px;
+  padding: 0 6px;
+  border: 1px solid #CCCCCC;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.add-form table td button {
+  width: 80px;
+  height: 30px;
+  border: 1px solid #AAAAAA;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  appearance: none;
+}
+
+.quick-filter {
+  margin: 40px 0 0;
+  text-align: right;
+}
+
+.quick-filter input {
+  width: 120px;
+  height: 25px;
+  padding: 0 3px;
+  font-size: 12px;
+}
+
+.sites {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 0;
+  border-top: 1px solid #CCCCCC;
+}
+
+.sites tr td {
+  position: relative;
+  padding: 20px 0;
+  vertical-align: top;
+  line-height: 24px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.sites tr td:nth-child(1) {
+  width: 80px;
+  font-family: Arial, sans-serif;
+}
+
+.sites tr td:nth-child(2) {
+}
+
+.sites tr td:nth-child(2) span {
+  color: #888888;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.sites tr td:nth-child(2) p {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.sites tr td:nth-child(3) {
+  width: 40px;
+  text-align: right;
+}
+
+.sites tr td a {
+  text-decoration: none;
+  color: #2549CE;
+}
+
+.sites tr td form {
+}
+
+.sites tr td form .delete {
+  border: none;
+  vertical-align: middle;
+  font-size: 0.8em;
+  color: #EE3333;
+  cursor: pointer;
+  background: none;
+}
